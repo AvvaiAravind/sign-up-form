@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page contains sign up form for Odin Project"
+    />
+    <meta name="author" content="Avvai Alias Aravind" />
+    <title>Sign up form for Odin Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <figure>
+          <img
+            src="images/odin.png"
+            alt="Odin"
+            width="380"
+            height="508"
+            title="Odin"
+          />
+          <h1 class="hero__heading">ODIN</h1>
+        </figure>
+        <p>
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto">Hallie West</a> on
+          <a
+            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+            >Unsplash</a
+          >
+        </p>
+      </section>
+      <section class="form-area">
+        <div class="form-area__div">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </p>
+          <p>You know you want to.</p>
+        </div>
+        <form action="https://httpbin.org/" method="get">
+          <legend>Let's do this!</legend>
+          <div class="container">
+            <div class="input_group">
+              <label for="first_name">FIRST NAME</label>
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                autocomplete="on"
+                autofocus
+                required
+                placeholder="John"
+              />
+            </div>
+            <div class="input_group">
+              <label for="last_name">LAST NAME</label>
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                autocomplete="on"
+                required
+                placeholder="Abraham"
+              />
+            </div>
+            <div class="input_group">
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="on"
+                required
+                placeholder="xyz@gmail.com"
+              />
+            </div>
+            <div class="input_group">
+              <label for="phone_number">PHONE NUMBER</label>
+              <input
+                type="tel"
+                name="phone_number"
+                id="phone_number"
+                required
+                pattern="(^\d{10})"
+              />
+            </div>
+            <div class="input_group">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" required />
+            </div>
+            <div class="input_group">
+              <label for="confirm_password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+                required
+              />
+            </div>
+          </div>
+        </form>
+        <article class="create_account">
+          <button type="button">Create Account</button>
+          <p>Already have an account?<span>Log in</span></p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
